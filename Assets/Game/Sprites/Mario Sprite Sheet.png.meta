@@ -1,0 +1,1284 @@
+fileFormatVersion: 2
+guid: 99baada1c74e0164aa4f4b435dbd8bfd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1428657670321064428
+    second: Idle
+  - first:
+      213: 7853938966586614271
+    second: Walk1
+  - first:
+      213: 4646503640169498987
+    second: Walk2
+  - first:
+      213: 3217002283891182484
+    second: Walk3
+  - first:
+      213: -1651750365625141931
+    second: Stop
+  - first:
+      213: 1146975431802188850
+    second: Jump
+  - first:
+      213: -2632398835404198838
+    second: Dead
+  - first:
+      213: 8695212960968365475
+    second: Climb1
+  - first:
+      213: -9045173695033621504
+    second: Climb2
+  - first:
+      213: -4043281565370497777
+    second: Swim1
+  - first:
+      213: 1103427004517272295
+    second: swim2
+  - first:
+      213: 6304619484879048951
+    second: Swim2
+  - first:
+      213: -5935774752140324627
+    second: Swim4
+  - first:
+      213: 8299888983579596815
+    second: Swim5
+  - first:
+      213: -377172398528279806
+    second: bigIdle
+  - first:
+      213: -8816641036397038210
+    second: bigWalk1
+  - first:
+      213: -5077733890455362380
+    second: bigWalk2
+  - first:
+      213: -6889365673911824317
+    second: bigWalk3
+  - first:
+      213: 3273008284173967364
+    second: bigStop
+  - first:
+      213: 2177085998316777896
+    second: bigJump
+  - first:
+      213: 4233291215990962604
+    second: Crouch
+  - first:
+      213: 6674231583300996944
+    second: bigClimb1
+  - first:
+      213: -1688789873007432203
+    second: bigClimb2
+  - first:
+      213: -1139167514413823018
+    second: bigSwim1
+  - first:
+      213: 8301091686533670843
+    second: bigSwim2
+  - first:
+      213: -2850130081514694844
+    second: bigSwim3
+  - first:
+      213: 2246730673791224041
+    second: bigSwim4
+  - first:
+      213: -4132515231016481980
+    second: bigSwim5
+  - first:
+      213: 1795026139676452204
+    second: bigSwim6
+  - first:
+      213: -31218112962636092
+    second: Growimg3
+  - first:
+      213: 3727068646032420622
+    second: Shrinking1
+  - first:
+      213: 1753768231250875460
+    second: Shrinking2
+  - first:
+      213: 1172901000006832369
+    second: Fireball_Idle
+  - first:
+      213: 5957778751327162356
+    second: Fireball_+Movement
+  - first:
+      213: -8676024025984730658
+    second: Fireball1
+  - first:
+      213: -2918883054513890959
+    second: Fireball2
+  - first:
+      213: -8152424294984087097
+    second: Mario Sprite Sheet_36
+  - first:
+      213: 986748425592175619
+    second: Fireball4
+  - first:
+      213: -1450932258777294558
+    second: Mario Sprite Sheet_38
+  - first:
+      213: 447078579972972445
+    second: Fireball3
+  - first:
+      213: -473244237836989268
+    second: Growing2
+  - first:
+      213: -877830315130641415
+    second: Mario Sprite Sheet_41
+  - first:
+      213: -7258560184640941524
+    second: Mario Sprite Sheet_42
+  - first:
+      213: -3772883896838816556
+    second: Growing1
+  - first:
+      213: -7861284915253481128
+    second: Shrinking3
+  - first:
+      213: -1044908552136766188
+    second: Skrinking3
+  - first:
+      213: -1472975381441811943
+    second: Hit1
+  - first:
+      213: -7620412770117930064
+    second: Hit2
+  - first:
+      213: 4511570426961138343
+    second: Hit3
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 405
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9cf11f49c93d310800000000000000
+      internalID: 1428657670321064428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 405
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff16efec0ebcefc60800000000000000
+      internalID: 7853938966586614271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk2
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 405
+        width: 55
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69ccd74172bb7040800000000000000
+      internalID: 4646503640169498987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 405
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b44f4688615ac20800000000000000
+      internalID: 3217002283891182484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stop
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 405
+        width: 65
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555ba473bcdc319e0800000000000000
+      internalID: -1651750365625141931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 405
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2347baa0410eaef00800000000000000
+      internalID: 1146975431802188850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 415
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ca49cc437d77bd0800000000000000
+      internalID: -2632398835404198838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Climb1
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 405
+        width: 60
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a554e86e1a9ba870800000000000000
+      internalID: 8695212960968365475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Climb2
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 405
+        width: 65
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00440df9276197280800000000000000
+      internalID: -9045173695033621504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swim1
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 405
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05c439a6d063e7c0800000000000000
+      internalID: -4043281565370497777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swim2
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 405
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea43dfa309205f00800000000000000
+      internalID: 1103427004517272295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swim2
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 405
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0d838a4028e7750800000000000000
+      internalID: 6304619484879048951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swim4
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 405
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de091ffdf44ef9da0800000000000000
+      internalID: -5935774752140324627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swim5
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 405
+        width: 70
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08907d4e012f2370800000000000000
+      internalID: 8299888983579596815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigIdle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 205
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bc3aea3b304caf0800000000000000
+      internalID: -377172398528279806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigWalk1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 205
+        width: 80
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e753c61a0bff4a580800000000000000
+      internalID: -8816641036397038210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigWalk2
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 205
+        width: 70
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4227bfde34889b0800000000000000
+      internalID: -5077733890455362380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigWalk3
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 205
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34057b6cb6e0460a0800000000000000
+      internalID: -6889365673911824317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigStop
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 205
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400a91d71bf0c6d20800000000000000
+      internalID: 3273008284173967364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigJump
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 205
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1f5274e20963e10800000000000000
+      internalID: 2177085998316777896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crouch
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 205
+        width: 80
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca93ce79eebafba30800000000000000
+      internalID: 4233291215990962604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigClimb1
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 210
+        width: 70
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f495f6342af9c50800000000000000
+      internalID: 6674231583300996944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigClimb2
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 225
+        width: 70
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd6d1fde863098e0800000000000000
+      internalID: -1688789873007432203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSwim1
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 215
+        width: 80
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db03b36e2dd030f0800000000000000
+      internalID: -1139167514413823018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSwim2
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 210
+        width: 70
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7a9c768e6633370800000000000000
+      internalID: 8301091686533670843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSwim3
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 215
+        width: 80
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44759af9acd4278d0800000000000000
+      internalID: -2850130081514694844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSwim4
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 210
+        width: 70
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8cc45e4adfd2f10800000000000000
+      internalID: 2246730673791224041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSwim5
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 215
+        width: 80
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b0f5ada4b56a6c0800000000000000
+      internalID: -4132515231016481980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bigSwim6
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 210
+        width: 80
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65a4f973c639e810800000000000000
+      internalID: 1795026139676452204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Growimg3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 5
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6dd4aaa47119ff0800000000000000
+      internalID: -31218112962636092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shrinking1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 5
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f224ccf2539b330800000000000000
+      internalID: 3727068646032420622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shrinking2
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 10
+        width: 80
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444d21a1ae2a65810800000000000000
+      internalID: 1753768231250875460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireball_Idle
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 5
+        width: 80
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f09b16ce3bf64010800000000000000
+      internalID: 1172901000006832369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireball_+Movement
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 45
+        width: 70
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffc93b65384ea250800000000000000
+      internalID: 5957778751327162356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireball1
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 105
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9fc6cad12989780800000000000000
+      internalID: -8676024025984730658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireball2
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 100
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179dacaa35b0e77d0800000000000000
+      internalID: -2918883054513890959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 135
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9853f0c45ccde80800000000000000
+      internalID: -8152424294984087097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireball4
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 100
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cf81e0772a1bd00800000000000000
+      internalID: 986748425592175619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 125
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2299c6a4cc04ddbe0800000000000000
+      internalID: -1450932258777294558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireball3
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 100
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f99f98997543600800000000000000
+      internalID: 447078579972972445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Growing2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 6
+        width: 80
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacc9bf7fd2be69f0800000000000000
+      internalID: -473244237836989268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 110
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3a195baf151d3f0800000000000000
+      internalID: -877830315130641415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mario Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 100
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22dea538f9644b90800000000000000
+      internalID: -7258560184640941524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Growing1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc712ed51604abc0800000000000000
+      internalID: -3772883896838816556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shrinking3
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 6
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851fd2c350b17e290800000000000000
+      internalID: -7861284915253481128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrinking3
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 5
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41dce1f353dbf71f0800000000000000
+      internalID: -1044908552136766188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit1
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 25
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ae34ad1b0fe8be0800000000000000
+      internalID: -1472975381441811943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 10
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b33543d5fade3690800000000000000
+      internalID: -7620412770117930064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit3
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 5
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a21d2666615c9e30800000000000000
+      internalID: 4511570426961138343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
