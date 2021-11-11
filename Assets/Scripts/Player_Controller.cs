@@ -31,7 +31,6 @@ public class Player_Controller : MonoBehaviour
     void Update()
     {
         Movement();
-        //jumpInput = Input.GetAxis("Vertical"); when was a float value 
 
         if (Input.GetKeyDown(KeyCode.W))
         {
@@ -119,7 +118,6 @@ public class Player_Controller : MonoBehaviour
         return speed;
     }
 
-
     public bool GetIsWalking()
     {
         return isWalking;
@@ -134,5 +132,4 @@ public class Player_Controller : MonoBehaviour
     {
         return isGrounded;
     }
-
 }
