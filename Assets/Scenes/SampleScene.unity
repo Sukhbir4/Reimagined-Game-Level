@@ -1279,6 +1279,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1306,17 +1307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 573089f221baa174d87b21d58c314a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trans: {fileID: 0}
-  body: {fileID: 0}
-  speed: 5
-  jumpForce: 0
-  shootDelay: 0
-  bulletPrefab: {fileID: 0}
-  bulletSpawn: {fileID: 0}
-  bulletSpeed: 0
-  jumpInput: 0
-  isGrounded: 0
-  timeToNextShot: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1374,6 +1364,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c297fb6c1a8312349ad29c6287e2a674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObj: {fileID: 1815672926}
 --- !u!1 &746978184
 GameObject:
   m_ObjectHideFlags: 0
@@ -2585,6 +2588,7 @@ GameObject:
   - component: {fileID: 1815672930}
   - component: {fileID: 1815672929}
   - component: {fileID: 1815672928}
+  - component: {fileID: 1815672927}
   m_Layer: 0
   m_Name: Mario
   m_TagString: Untagged
@@ -2592,6 +2596,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1815672927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815672926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c6625daa0185846b9e69758681cd01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 20
+  defaultSpeed: 10
+  jumpForce: 20
+  hasStarPower: 0
 --- !u!50 &1815672928
 Rigidbody2D:
   serializedVersion: 4
@@ -2698,7 +2718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815672926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.67, y: -3.92, z: 0}
+  m_LocalPosition: {x: -8.960001, y: -3.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2780,7 +2800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959845165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.95, y: 0.003, z: 0}
+  m_LocalPosition: {x: 54.66, y: 0.003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 746978185}
