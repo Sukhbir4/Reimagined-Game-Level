@@ -22,7 +22,9 @@ public class PlayerHealth : MonoBehaviour
         {
             //Destroy(gameObject);
             Debug.Log("Mario has Died");
+            Destroy(gameObject);
         }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -32,5 +34,12 @@ public class PlayerHealth : MonoBehaviour
             _hp--;
             Debug.Log(_hp);
         }
+
+        if(collision.collider.gameObject.tag == "DeathFloor")
+        {
+            _hp = 0;
+        }
     }
+
+
 }

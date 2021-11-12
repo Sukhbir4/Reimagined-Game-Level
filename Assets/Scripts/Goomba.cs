@@ -47,7 +47,10 @@ public class Goomba : MonoBehaviour
         }
 
 
-
+        if(collision.collider.tag == "DeathFloor")
+        {
+            Destroy(gameObject);
+        }
        
 
 

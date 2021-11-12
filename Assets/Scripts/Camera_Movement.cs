@@ -24,9 +24,10 @@ public class Camera_Movement : MonoBehaviour
         {
             trans.position += transform.right * Time.deltaTime * player.GetSpeed();
         }
-        if (playerObj.transform.position.x - trans.position.x < -3)
+
+        if (playerObj.transform.position.x - trans.position.x > -3)
         {
-            trans.position -= transform.right * Time.deltaTime * player.GetSpeed(); // checks if player is 3 units ahead or behind the cam and then moves it at the same speed  
+            trans.position += transform.right * Time.deltaTime * player.GetSpeed();
         }
 
     }

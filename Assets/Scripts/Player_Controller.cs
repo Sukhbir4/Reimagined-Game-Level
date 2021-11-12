@@ -53,7 +53,7 @@ public class Player_Controller : MonoBehaviour
 
     void Movement()
     {
-        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift) && isGrounded)
         {
             speed = runSpeed;
             trans.position += transform.right * Time.deltaTime * speed;
@@ -67,7 +67,7 @@ public class Player_Controller : MonoBehaviour
             trans.rotation = Quaternion.Euler(0, 0, 0);
             isWalking = true;
         }
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift)) // also getkey down and up but they are called once while get key is called every frame
+        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) && isGrounded) // also getkey down and up but they are called once while get key is called every frame
         {
             speed = runSpeed; 
             trans.position += transform.right * Time.deltaTime * speed;
