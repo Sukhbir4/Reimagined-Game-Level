@@ -22,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
         {
             //Destroy(gameObject);
             Debug.Log("Mario has Died");
-            Destroy(gameObject);
+            Destroy(gameObject);    
         }
         
     }
