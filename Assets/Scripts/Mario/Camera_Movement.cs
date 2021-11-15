@@ -24,11 +24,5 @@ public class Camera_Movement : MonoBehaviour
         {
             trans.position += transform.right * Time.deltaTime * player.GetSpeed();
         }
-
-        if (playerObj.transform.position.x - trans.position.x > -3)
-        {
-            trans.position += transform.right * Time.deltaTime * player.GetSpeed();
-        }
-
     }
 }
