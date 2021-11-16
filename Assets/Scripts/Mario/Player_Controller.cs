@@ -45,9 +45,9 @@ public class Player_Controller : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (jumpInput == true && isGrounded) 
+        if (jumpInput == true && isGrounded)
         { 
-        jump();
+            jump();
         }
     }
 
@@ -99,6 +99,7 @@ public class Player_Controller : MonoBehaviour
         isGrounded = false;
     }
   
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.collider.gameObject.tag == "Ground")

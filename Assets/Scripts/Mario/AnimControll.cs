@@ -5,8 +5,8 @@ using UnityEngine;
 public class AnimControll : MonoBehaviour
 {
     Animator anim;
-    Player_Controller playerMovement;   
-
+    Player_Controller playerMovement;
+    PlayerHealth health;
 
 
     // Start is called before the first frame update
@@ -14,6 +14,7 @@ public class AnimControll : MonoBehaviour
     {
         playerMovement = GetComponent<Player_Controller>();
         anim = GetComponent<Animator>();
+        health = GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -44,5 +45,12 @@ public class AnimControll : MonoBehaviour
         {
             anim.SetBool("InAir", true);
         }
+
+        if(health.GetHp() == 0)
+        {
+            anim.SetBool("died", true);
+            Debug.Log("change");
+        }
+
     }
 }

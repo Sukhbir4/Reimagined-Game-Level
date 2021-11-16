@@ -20,9 +20,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (_hp <= 0)
         {
-            //Destroy(gameObject);
             Debug.Log("Mario has Died");
-            Destroy(gameObject);    
         }
         
     }
@@ -41,5 +39,9 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public int GetHp()
+    {
+        return _hp;
+    }
 
 }
