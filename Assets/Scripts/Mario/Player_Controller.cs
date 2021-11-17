@@ -9,8 +9,12 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] float runSpeed;
     [SerializeField] float defaultSpeed; 
     [SerializeField] float jumpForce;
+    [SerializeField] ParticleSystem runSmoke;
+    [SerializeField] int enemieBounceBack;
 
     [SerializeField] bool hasStarPower;
+
+    Stompy stomp;
 
     float speed;
 
@@ -25,6 +29,7 @@ public class Player_Controller : MonoBehaviour
         speed = defaultSpeed;
         trans = GetComponent<Transform>();
         body = GetComponent<Rigidbody2D>();
+        stomp = GetComponent<Stompy>();
     }
 
     // Update is called once per frame
@@ -59,6 +64,7 @@ public class Player_Controller : MonoBehaviour
             trans.position += transform.right * Time.deltaTime * speed;
             trans.rotation = Quaternion.Euler(0, 0, 0);
             isRunning = true;
+            runSmoke.gameObject.SetActive(true);
         }
         else if (Input.GetKey(KeyCode.D)) // also getkey down and up but they are called once while get key is called every frame
         {
@@ -73,6 +79,7 @@ public class Player_Controller : MonoBehaviour
             trans.position += transform.right * Time.deltaTime * speed;
             trans.rotation = Quaternion.Euler(0, 180, 0);
             isRunning = true;
+            runSmoke.gameObject.SetActive(true);
         }
         else if (Input.GetKey(KeyCode.A)) // also getkey down and up but they are called once while get key is called every frame
         {
@@ -89,6 +96,7 @@ public class Player_Controller : MonoBehaviour
         if (!Input.GetKey(KeyCode.LeftShift))
         {
             isRunning = false;
+            runSmoke.gameObject.SetActive(false);
         }
     }
 
@@ -97,6 +105,7 @@ public class Player_Controller : MonoBehaviour
 
         body.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         isGrounded = false;
+        runSmoke.gameObject.SetActive(false);
     }
   
 
@@ -112,7 +121,23 @@ public class Player_Controller : MonoBehaviour
                 }
             }
         }
+
+        //if (collision.gameObject.tag == "Stompy")
+        //{
+        //    Debug.Log("stompy");
+        //    body.AddForce(transform.up * enemieBounceBack, ForceMode2D.Impulse);
+            
+        //}
+
     }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.tag == "Stompy")
+    //    {
+    //        Debug.Log("stompy");
+    //        body.AddForce(transform.up * enemieBounceBack, ForceMode2D.Impulse);
+    //    }
+    //}
 
     public float GetSpeed()
     {
@@ -132,5 +157,11 @@ public class Player_Controller : MonoBehaviour
     public bool GetIsGrounded()
     {
         return isGrounded;
+
+
     }
+
+
+
+
 }

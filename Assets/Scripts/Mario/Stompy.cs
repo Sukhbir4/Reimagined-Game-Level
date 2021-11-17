@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Stompy : MonoBehaviour
 {
-    [SerializeField] float bounceBack;
+   
     
 
     Goomba goomba;
@@ -28,15 +28,17 @@ public class Stompy : MonoBehaviour
         if(collision.tag == "Player")
         {
             //anim.SetBool("IsStomp", true);
-
-
-                    
-
-            Destroy(transform.parent.gameObject);
+            // Destroy(transform.parent.gameObject);
+            Rigidbody2D player = collision.GetComponent<Rigidbody2D>();
+            player.AddForce(Vector2.up * 10);
+            Debug.Log("hit player");
         }
+        Debug.Log("hit");
 
-       
-       
+        
 
     }
+
+   
+
 }

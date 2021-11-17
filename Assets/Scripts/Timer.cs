@@ -17,6 +17,6 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TextVar.text = $"time: {Time.realtimeSinceStartup:0.00}";
+        TextVar.text = $"Time: {Time.realtimeSinceStartup:0.00}";
     }
 }

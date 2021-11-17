@@ -24,11 +24,6 @@ public class Goomba : MonoBehaviour
     {
         transform.Translate(Vector2.right * Time.deltaTime * speed);
     }
-
-
-   
-
-
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision != null && collision.collider.gameObject.tag !=("Player") && collision.collider.gameObject.tag == "Ground")
@@ -45,20 +40,13 @@ public class Goomba : MonoBehaviour
         {
             gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-
-
-        if(collision.collider.tag == "DeathFloor")
+        if (collision.collider.tag == "DeathFloor")
         {
             Destroy(gameObject);
         }
-       
-
-
     }
-
     public void Die()
     {
         Destroy(gameObject);
     }
-
 }
