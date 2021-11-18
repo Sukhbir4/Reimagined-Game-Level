@@ -30,7 +30,7 @@ public class Stompy : MonoBehaviour
             //anim.SetBool("IsStomp", true);
             // Destroy(transform.parent.gameObject);
             Rigidbody2D player = collision.GetComponent<Rigidbody2D>();
-            player.AddForce(Vector2.up * 10);
+            player.AddForce(Vector2.up * 10,ForceMode2D.Impulse);
             Debug.Log("hit player");
         }
         Debug.Log("hit");

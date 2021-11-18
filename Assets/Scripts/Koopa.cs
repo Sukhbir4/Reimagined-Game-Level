@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Goomba : MonoBehaviour
+public class Koopa : MonoBehaviour
 {
     [SerializeField] float speed;
     Transform trans;
     Rigidbody2D body;
-   
+
     bool turn;
     bool hitFace;
 
@@ -27,10 +27,34 @@ public class Goomba : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
 
-
         if (collision.collider.tag == "DeathFloor")
         {
             Die();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (GetComponent<Renderer>())
+        {
+            if (collision.tag == "wall")
+            {
+                hitFace = !hitFace;
+                Debug.Log("pine");
+            }
+
+            if (hitFace)
+            {
+                gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+
+            }
+            else
+            {
+                gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+
+
+            }
+
         }
     }
     void Die()
@@ -38,5 +62,5 @@ public class Goomba : MonoBehaviour
         Destroy(gameObject);
     }
 
-    
+
 }

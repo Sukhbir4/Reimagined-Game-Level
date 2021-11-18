@@ -8,6 +8,7 @@ TagManager:
   - DeathFloor
   - Enemy
   - Stompy
+  - wall
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Invisible cam wall
+  - Enemy
   - 
   - 
   - 
