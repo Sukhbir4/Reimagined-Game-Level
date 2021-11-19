@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Stompy : MonoBehaviour
 {
-   
-    
 
+
+    [SerializeField] int bounce;
     Goomba goomba;
     Animator anim;
 
@@ -30,8 +30,9 @@ public class Stompy : MonoBehaviour
             //anim.SetBool("IsStomp", true);
             // Destroy(transform.parent.gameObject);
             Rigidbody2D player = collision.GetComponent<Rigidbody2D>();
-            player.AddForce(Vector2.up * 10,ForceMode2D.Impulse);
+            player.AddForce(Vector2.up * bounce,ForceMode2D.Impulse);
             Debug.Log("hit player");
+            Destroy(transform.parent);
         }
         Debug.Log("hit");
 
