@@ -122,6 +122,7 @@ public class Player_Controller : MonoBehaviour
             }
         }
 
+
         //if (collision.gameObject.tag == "Stompy")
         //{
         //    Debug.Log("stompy");
@@ -130,6 +131,15 @@ public class Player_Controller : MonoBehaviour
         //}
 
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "MushroomBlock" || collision.gameObject.tag == "MafiaBlock")
+        {
+            collision.gameObject.GetComponent<QuestionBlock>().QuestionBlockBounce();
+        }
+    }
+
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
     //    if (collision.tag == "Stompy")
