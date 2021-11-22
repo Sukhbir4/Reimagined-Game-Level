@@ -54,7 +54,6 @@ public class QuestionBlock : MonoBehaviour
 
             yield return null;
         }
-
         while (true)
         {
             transform.position = new Vector2(transform.position.x, transform.position.y - bounceSpeed * Time.deltaTime);

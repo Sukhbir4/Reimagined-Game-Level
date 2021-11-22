@@ -40,9 +40,7 @@ public class Koopa : MonoBehaviour
             if (collision.tag == "wall" || collision.tag == "Player")
             {
                 hitFace = !hitFace;
-                Debug.Log("pine");
             }
-
             if (hitFace)
             {
                 gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);

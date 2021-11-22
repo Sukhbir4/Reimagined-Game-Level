@@ -66,14 +66,14 @@ public class Player_Controller : MonoBehaviour
             isRunning = true;
             runSmoke.gameObject.SetActive(true);
         }
-        else if (Input.GetKey(KeyCode.D)) // also getkey down and up but they are called once while get key is called every frame
+        else if (Input.GetKey(KeyCode.D))
         {
             speed = defaultSpeed;
             trans.position += transform.right * Time.deltaTime * speed;
             trans.rotation = Quaternion.Euler(0, 0, 0);
             isWalking = true;
         }
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) && isGrounded) // also getkey down and up but they are called once while get key is called every frame
+        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) && isGrounded) 
         {
             speed = runSpeed; 
             trans.position += transform.right * Time.deltaTime * speed;
@@ -81,7 +81,7 @@ public class Player_Controller : MonoBehaviour
             isRunning = true;
             runSmoke.gameObject.SetActive(true);
         }
-        else if (Input.GetKey(KeyCode.A)) // also getkey down and up but they are called once while get key is called every frame
+        else if (Input.GetKey(KeyCode.A)) 
         {
             speed = defaultSpeed;
             trans.position += transform.right * Time.deltaTime * speed;
@@ -113,9 +113,9 @@ public class Player_Controller : MonoBehaviour
     {
         if(collision.collider.gameObject.tag == "Ground")
         {
-            for(int i = 0; i < collision.contacts.Length; i++) // loops through all the collisions floors and walls
+            for(int i = 0; i < collision.contacts.Length; i++) 
             {
-                if (collision.contacts[i].normal.y > 0.5) //checks that the collision is the floor not the wall
+                if (collision.contacts[i].normal.y > 0.5) 
                 {
                     isGrounded = true;
                 }
