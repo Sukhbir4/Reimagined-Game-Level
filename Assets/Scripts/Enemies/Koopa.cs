@@ -32,7 +32,6 @@ public class Koopa : MonoBehaviour
             Die();
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (GetComponent<Renderer>())
@@ -56,6 +55,4 @@ public class Koopa : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-
 }

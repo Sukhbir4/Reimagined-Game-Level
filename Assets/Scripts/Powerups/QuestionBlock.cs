@@ -40,7 +40,6 @@ public class QuestionBlock : MonoBehaviour
             StartCoroutine(Bounce());
         }
     }
-
     IEnumerator Bounce()
     {
         while (true)
@@ -75,10 +74,8 @@ public class QuestionBlock : MonoBehaviour
                 {
 
                 }
-
                 break;
             }
-
             yield return null;
         }
     }

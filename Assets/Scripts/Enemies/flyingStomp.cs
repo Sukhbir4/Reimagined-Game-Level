@@ -26,7 +26,6 @@ public class flyingStomp : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-   
             Rigidbody2D player = collision.GetComponent<Rigidbody2D>();
             player.AddForce(Vector2.up * bounce, ForceMode2D.Impulse);
             enBody.gravityScale = 2;

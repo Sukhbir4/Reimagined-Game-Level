@@ -9,8 +9,6 @@ public class FlyingKoopa : MonoBehaviour
     Rigidbody2D body;
     [SerializeField] GameObject RegularKoopa;
 
-
-
     bool turn;
     bool hitFace;
     // Start is called before the first frame update

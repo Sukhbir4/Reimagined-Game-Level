@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
 {
 
     [SerializeField] Text TextVar;
+    [SerializeField] int startTime;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,6 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TextVar.text = $"Time: {Time.realtimeSinceStartup:0.00}";
+        TextVar.text = $"Time: {startTime - Time.realtimeSinceStartup:0}";
     }
 }

@@ -49,7 +49,7 @@ public class AnimControll : MonoBehaviour
         if(health.GetHp() == 0)
         {
             anim.SetBool("died", true);
-            Debug.Log("change");
+
         }
 
     }

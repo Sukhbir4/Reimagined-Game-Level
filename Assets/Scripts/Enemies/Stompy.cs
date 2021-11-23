@@ -35,8 +35,6 @@ public class Stompy : MonoBehaviour
             player.AddForce(Vector2.up * bounce, ForceMode2D.Impulse);
             blood.gameObject.SetActive(true);
             enemy.enabled = false;
-            Debug.Log(enemy.name);
-            Debug.Log("hey");
             enBody.gravityScale = 1;
             
 

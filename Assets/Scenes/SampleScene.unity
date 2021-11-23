@@ -12094,6 +12094,7 @@ MonoBehaviour:
   jumpForce: 16
   runSmoke: {fileID: 1437133388}
   enemieBounceBack: 16
+  dashForce: 7
   hasStarPower: 0
 --- !u!50 &1815672928
 Rigidbody2D:
@@ -12746,6 +12747,18 @@ PrefabInstance:
     - target: {fileID: 1358020987, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1358020989, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 645020408470899446, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
+      propertyPath: m_Size.y
+      value: 1.1202002
+      objectReference: {fileID: 0}
+    - target: {fileID: 645020408470899446, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.014899969
       objectReference: {fileID: 0}
     - target: {fileID: 4063363488069922783, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
       propertyPath: m_Name
