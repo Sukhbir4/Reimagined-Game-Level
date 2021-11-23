@@ -11,6 +11,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] float jumpForce;
     [SerializeField] ParticleSystem runSmoke;
     [SerializeField] int enemieBounceBack;
+    [SerializeField] float dashForce;
 
     [SerializeField] bool hasStarPower;
 
@@ -22,6 +23,8 @@ public class Player_Controller : MonoBehaviour
     bool isGrounded;
     bool isRunning;
     bool isWalking;
+    bool canDash;
+    bool dashInput;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +48,17 @@ public class Player_Controller : MonoBehaviour
         {
             jumpInput = false;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            dashInput = true;
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            dashInput = false;
+        }
+
+        Debug.Log(canDash);
     }
     
 
@@ -54,6 +68,11 @@ public class Player_Controller : MonoBehaviour
         { 
             jump();
         }
+        if(dashInput == true && canDash)
+        {
+            dash();
+        }
+
     }
 
     void Movement()
@@ -100,6 +119,14 @@ public class Player_Controller : MonoBehaviour
         }
     }
 
+    void dash()
+    {
+        body.AddForce(transform.right * dashForce, ForceMode2D.Impulse);
+        canDash = false;
+        //speed = dashForce;
+        
+    }
+
     void jump()
     {
 
@@ -118,6 +145,7 @@ public class Player_Controller : MonoBehaviour
                 if (collision.contacts[i].normal.y > 0.5) 
                 {
                     isGrounded = true;
+                    canDash = true;
                 }
             }
         }
