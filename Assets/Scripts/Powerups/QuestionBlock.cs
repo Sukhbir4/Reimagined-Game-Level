@@ -28,7 +28,6 @@ public class QuestionBlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void QuestionBlockBounce()

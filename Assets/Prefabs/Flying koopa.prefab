@@ -116,3 +116,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  RegularKoopa: {fileID: 4063363488069922783, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
+  koopaPosition: {fileID: 0}

@@ -31,7 +31,9 @@ public class Stompy : MonoBehaviour
         if (collision.tag == "Player")
         {
             anim.SetBool("die", true);
+           
             Rigidbody2D player = collision.GetComponent<Rigidbody2D>();
+            
             player.AddForce(Vector2.up * bounce, ForceMode2D.Impulse);
             blood.gameObject.SetActive(true);
             enemy.enabled = false;

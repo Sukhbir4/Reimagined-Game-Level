@@ -8,6 +8,9 @@ public class FlyingKoopa : MonoBehaviour
     Transform trans;
     Rigidbody2D body;
     [SerializeField] GameObject RegularKoopa;
+    [SerializeField] Transform koopaPosition;
+    
+
 
     bool turn;
     bool hitFace;
@@ -29,6 +32,12 @@ public class FlyingKoopa : MonoBehaviour
         if (collision.collider.tag == "DeathFloor")
         {
             Die();
+        }
+
+        if (collision.collider.tag == "Ground")
+        {
+            var Koopa = Instantiate(RegularKoopa, koopaPosition.position, Quaternion.Euler(new Vector3(0,0,0)));
+            Destroy(gameObject);
         }
     }
 
@@ -53,8 +62,19 @@ public class FlyingKoopa : MonoBehaviour
 
         }
     }
+
+
+
     void Die()
     {
         Destroy(gameObject);
+    }
+
+    void spawnKoopa()
+    {
+
+
+
+
     }
 }

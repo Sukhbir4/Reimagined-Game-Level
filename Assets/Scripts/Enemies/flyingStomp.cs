@@ -29,6 +29,10 @@ public class flyingStomp : MonoBehaviour
             Rigidbody2D player = collision.GetComponent<Rigidbody2D>();
             player.AddForce(Vector2.up * bounce, ForceMode2D.Impulse);
             enBody.gravityScale = 2;
+            Debug.Log(enemy.name);
+            Debug.Log("grav scale " + enBody.gravityScale);
+            enBody.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+           // enBody.constraints = ~RigidbodyConstraints2D.FreezePositionX;
         }
     }
 }
