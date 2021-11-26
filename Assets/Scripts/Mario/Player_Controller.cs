@@ -10,7 +10,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] float defaultSpeed; 
     [SerializeField] float jumpForce;
     [SerializeField] ParticleSystem runSmoke;
-    [SerializeField] int enemieBounceBack;
+    [SerializeField] int enemyBounceBack;
     [SerializeField] float dashForce;
 
     [SerializeField] bool hasStarPower;

@@ -1655,7 +1655,7 @@ Transform:
   - {fileID: 1228811182}
   - {fileID: 545862507}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &411581459
 GameObject:
@@ -2985,7 +2985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextVar: {fileID: 2089632305}
-  startTime: 180
+  startTime: 300
 --- !u!4 &634699692
 Transform:
   m_ObjectHideFlags: 0
@@ -4749,7 +4749,7 @@ Transform:
   - {fileID: 1686386903}
   - {fileID: 1471219804}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1140886630
 GameObject:
@@ -5031,7 +5031,7 @@ Transform:
   - {fileID: 897354238}
   - {fileID: 937718573}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1188155936
 GameObject:
@@ -5821,7 +5821,7 @@ RectTransform:
   m_Children:
   - {fileID: 2089632304}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10845,7 +10845,7 @@ Transform:
   - {fileID: 182320198}
   - {fileID: 1587213414}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1471219803
 GameObject:
@@ -11195,7 +11195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2923572262765761724, guid: a7a7fa39ddda0a444a6979d32d1e9660, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.68
+      value: -2.405
       objectReference: {fileID: 0}
     - target: {fileID: 2923572262765761724, guid: a7a7fa39ddda0a444a6979d32d1e9660, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12337,7 +12337,7 @@ MonoBehaviour:
   defaultSpeed: 10
   jumpForce: 16
   runSmoke: {fileID: 1437133388}
-  enemieBounceBack: 16
+  enemyBounceBack: 0
   dashForce: 7
   hasStarPower: 0
 --- !u!50 &1815672928
@@ -13063,7 +13063,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4983808925111155522, guid: 0326806e815e2cf488f1996cba9e3081, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4983808925111155522, guid: 0326806e815e2cf488f1996cba9e3081, type: 3}
       propertyPath: m_LocalPosition.x

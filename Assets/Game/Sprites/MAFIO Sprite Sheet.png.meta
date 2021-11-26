@@ -1,0 +1,1044 @@
+fileFormatVersion: 2
+guid: 91179362d2491204eb7314d13cb35272
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4373258214929225971
+    second: Mafio_idle
+  - first:
+      213: -2780235221224596158
+    second: Mafio_walk1
+  - first:
+      213: -6074289592039294066
+    second: Mafio_walk2
+  - first:
+      213: -2078641034132942084
+    second: Mafio_walk3
+  - first:
+      213: 7477687219620405749
+    second: Mafio_turn
+  - first:
+      213: -8878306143361898130
+    second: Mafio_jump
+  - first:
+      213: -5172508365585865726
+    second: Mafio_crouch
+  - first:
+      213: -2378508152860962910
+    second: Mafio_climb1
+  - first:
+      213: -1699169861832366484
+    second: Mafio_climb2
+  - first:
+      213: 8664564127598581501
+    second: Tommy_idle
+  - first:
+      213: 2324452247836254396
+    second: Tommy_walk1
+  - first:
+      213: 3877980825573497471
+    second: Tommy_walk2
+  - first:
+      213: -398335081407027076
+    second: Tommy_walk3
+  - first:
+      213: -2893190646163151683
+    second: Tommy_turn
+  - first:
+      213: -6315145512692218596
+    second: Tommy_jump
+  - first:
+      213: -3105290300818027183
+    second: Tommy_crouch
+  - first:
+      213: 1647586607703317300
+    second: Tommy_climb1
+  - first:
+      213: 7599666822649720373
+    second: Tommy_climb2
+  - first:
+      213: 8087837177064728638
+    second: Pistol_idle
+  - first:
+      213: -416581966167413443
+    second: Pistol_walk1
+  - first:
+      213: -606688790117144475
+    second: Pistol_walk2
+  - first:
+      213: -2276131941359120284
+    second: Pistol_walk3
+  - first:
+      213: 8539324827808025424
+    second: Pistol_turn
+  - first:
+      213: 964032648685978148
+    second: Pistol_jump
+  - first:
+      213: -7874871424712067116
+    second: Pistol_crouch
+  - first:
+      213: 3670036773698655697
+    second: Pistol_climb1
+  - first:
+      213: 24865493418875603
+    second: Pistol_climb2
+  - first:
+      213: 7013298767721026658
+    second: shootPistol_Ground
+  - first:
+      213: 1258088231163915325
+    second: shootTommy_Ground
+  - first:
+      213: -7629371568225380164
+    second: shootPistol_Jump
+  - first:
+      213: 533546266821380219
+    second: shootTommy_Jump
+  - first:
+      213: -8022206171900620015
+    second: Powerup_hat
+  - first:
+      213: 4106637398387795515
+    second: Powerup_pistol
+  - first:
+      213: -6425000450700006480
+    second: BULLET
+  - first:
+      213: -5156750764492012811
+    second: Hit1
+  - first:
+      213: 6027080599140135491
+    second: Hit2
+  - first:
+      213: -3021448396506490121
+    second: Powerup_pisto
+  - first:
+      213: -7763935070965805004
+    second: Hit3
+  - first:
+      213: 2208141996645202092
+    second: Hit4
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mafio_idle
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 875
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07a514f2d01f43c0800000000000000
+      internalID: -4373258214929225971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mafio_walk1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 875
+        width: 80
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dd0eeebce9a69d0800000000000000
+      internalID: -2780235221224596158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mafio_walk2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 875
+        width: 70
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b35ab8cc9c3bba0800000000000000
+      internalID: -6074289592039294066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mafio_walk3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 875
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf294f81efe2723e0800000000000000
+      internalID: -2078641034132942084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mafio_turn
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 875
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1e3f268e416c760800000000000000
+      internalID: 7477687219620405749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mafio_jump
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 876
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69eeb51a9be9c480800000000000000
+      internalID: -8878306143361898130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mafio_crouch
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 875
+        width: 80
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204a48feb0f8738b0800000000000000
+      internalID: -5172508365585865726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mafio_climb1
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 880
+        width: 70
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af0a55df67ddfed0800000000000000
+      internalID: -2378508152860962910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mafio_climb2
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 895
+        width: 70
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66ae6463065b68e0800000000000000
+      internalID: -1699169861832366484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tommy_idle
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 640
+        width: 120
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df61b1fca27be3870800000000000000
+      internalID: 8664564127598581501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tommy_walk1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 640
+        width: 105
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb063a1010d124020800000000000000
+      internalID: 2324452247836254396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tommy_walk2
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 640
+        width: 130
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a9512b30b51d530800000000000000
+      internalID: 3877980825573497471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tommy_walk3
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 640
+        width: 120
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78682b9a54d87af0800000000000000
+      internalID: -398335081407027076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tommy_turn
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 640
+        width: 120
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db466f3af6259d7d0800000000000000
+      internalID: -2893190646163151683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tommy_jump
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 644
+        width: 120
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1504138d981c58a0800000000000000
+      internalID: -6315145512692218596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tommy_crouch
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 640
+        width: 120
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d86478ceac7e4d0800000000000000
+      internalID: -3105290300818027183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tommy_climb1
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 640
+        width: 70
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bd8d85a476dd610800000000000000
+      internalID: 1647586607703317300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tommy_climb2
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 650
+        width: 70
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53eab5fd5b0777960800000000000000
+      internalID: 7599666822649720373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol_idle
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 400
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e382424bf05cd3070800000000000000
+      internalID: 8087837177064728638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol_walk1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 400
+        width: 145
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3de1cea8e0083af0800000000000000
+      internalID: -416581966167413443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol_walk2
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 399
+        width: 119
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5682bdf72cb9497f0800000000000000
+      internalID: -606688790117144475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol_walk3
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 400
+        width: 135
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4609e5d0f0e8960e0800000000000000
+      internalID: -2276131941359120284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol_turn
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 400
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bcb2700b6c18670800000000000000
+      internalID: 8539324827808025424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol_jump
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 390
+        width: 80
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4228ec8169ee06d00800000000000000
+      internalID: 964032648685978148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol_crouch
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 400
+        width: 80
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7b92e7926d6b290800000000000000
+      internalID: -7874871424712067116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol_climb1
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 400
+        width: 122
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5dde040079ee230800000000000000
+      internalID: 3670036773698655697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol_climb2
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 410
+        width: 126
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da9566d807585000800000000000000
+      internalID: 24865493418875603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shootPistol_Ground
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 162
+        width: 143
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26452b9321e345160800000000000000
+      internalID: 7013298767721026658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shootTommy_Ground
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 165
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3cef92a490a57110800000000000000
+      internalID: 1258088231163915325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shootPistol_Jump
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 165
+        width: 145
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb816781bf60f1690800000000000000
+      internalID: -7629371568225380164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shootTommy_Jump
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 165
+        width: 125
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78cf19b089876700800000000000000
+      internalID: 533546266821380219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powerup_hat
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 211
+        width: 65
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113dae87df56ba090800000000000000
+      internalID: -8022206171900620015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powerup_pistol
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 155
+        width: 80
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b362d38b4f4bdf830800000000000000
+      internalID: 4106637398387795515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BULLET
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 175
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb2d469120d5d6a0800000000000000
+      internalID: -6425000450700006480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 5
+        width: 80
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2ca37508a8f68b0800000000000000
+      internalID: -5156750764492012811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit2
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 10
+        width: 80
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34275604fdd74a350800000000000000
+      internalID: 6027080599140135491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Powerup_pisto
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 95
+        width: 120
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa9e0311b8a116d0800000000000000
+      internalID: -3021448396506490121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit3
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 5
+        width: 65
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430d2e32036f04490800000000000000
+      internalID: -7763935070965805004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 5
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8b8ab5275e4ae10800000000000000
+      internalID: 2208141996645202092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
