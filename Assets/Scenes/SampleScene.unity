@@ -1634,7 +1634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 390406555}
   m_Layer: 0
-  m_Name: bad guys
+  m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2712,7 +2712,7 @@ GameObject:
   - component: {fileID: 545862509}
   - component: {fileID: 545862510}
   m_Layer: 7
-  m_Name: Flying1
+  m_Name: Flying Koopa
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13006,7 +13006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4063363488069922783, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
       propertyPath: m_Name
-      value: koopa1
+      value: Koopa
       objectReference: {fileID: 0}
     - target: {fileID: 7448079499851570284, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
       propertyPath: m_RootOrder

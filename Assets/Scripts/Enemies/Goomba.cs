@@ -22,7 +22,7 @@ public class Goomba : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * Time.deltaTime * speed);
+        transform.Translate(Vector2.left * Time.deltaTime * speed);
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
