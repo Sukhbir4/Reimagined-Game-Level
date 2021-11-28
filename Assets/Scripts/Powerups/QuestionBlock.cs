@@ -9,6 +9,7 @@ public class QuestionBlock : MonoBehaviour
 
     [SerializeField] Sprite emptyBlockSprite;
     [SerializeField] GameObject mushroomPrefab;
+    [SerializeField] GameObject mafiaPrefab;
     [SerializeField] Transform powerupSpawn;
 
     SpriteRenderer spriteRenderer;
@@ -39,6 +40,7 @@ public class QuestionBlock : MonoBehaviour
             StartCoroutine(Bounce());
         }
     }
+
     IEnumerator Bounce()
     {
         while (true)
@@ -52,6 +54,7 @@ public class QuestionBlock : MonoBehaviour
 
             yield return null;
         }
+
         while (true)
         {
             transform.position = new Vector2(transform.position.x, transform.position.y - bounceSpeed * Time.deltaTime);
@@ -71,7 +74,7 @@ public class QuestionBlock : MonoBehaviour
 
                 if (gameObject.tag == "MafiaBlock")
                 {
-
+                    var mafia = Instantiate(mafiaPrefab, powerupSpawn.position, Quaternion.Euler(new Vector3(0, 0, 0)));
                 }
                 break;
             }

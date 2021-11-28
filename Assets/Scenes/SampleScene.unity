@@ -1134,6 +1134,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &325797680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 325797681}
+  m_Layer: 0
+  m_Name: powerupSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &325797681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325797680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1761905100}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &331918509
 GameObject:
   m_ObjectHideFlags: 0
@@ -5393,6 +5423,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 877442782}
+  - {fileID: 1761905100}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11344,6 +11375,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1559124956
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1294774227}
+    m_Modifications:
+    - target: {fileID: 324870927918741548, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: mafiaPrefab
+      value: 
+      objectReference: {fileID: 1215961880288539828, guid: 34b535f3319d6534bbbcf545de09d5fc, type: 3}
+    - target: {fileID: 324870927918741548, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: powerupSpawn
+      value: 
+      objectReference: {fileID: 325797681}
+    - target: {fileID: 324870927918741548, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: mushroomPrefab
+      value: 
+      objectReference: {fileID: 7680430642688634692, guid: a2e482b322795ff499afcb63546efb75, type: 3}
+    - target: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5454273
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.4204454
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7485607922848989214, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+      propertyPath: m_Name
+      value: MafiaBlock
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
 --- !u!1 &1585191968
 GameObject:
   m_ObjectHideFlags: 0
@@ -12189,6 +12289,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1761905100 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2982451424048439183, guid: 73baca9149bba9740891a39fc24019b8, type: 3}
+  m_PrefabInstance: {fileID: 1559124956}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1796092455
 GameObject:
   m_ObjectHideFlags: 0
@@ -12336,10 +12441,10 @@ MonoBehaviour:
   runSpeed: 15
   defaultSpeed: 10
   jumpForce: 16
-  runSmoke: {fileID: 1437133388}
-  enemyBounceBack: 0
   dashForce: 7
   hasStarPower: 0
+  enemyBounceBack: 0
+  runSmoke: {fileID: 1437133388}
 --- !u!50 &1815672928
 Rigidbody2D:
   serializedVersion: 4

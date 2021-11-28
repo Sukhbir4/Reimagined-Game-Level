@@ -6,9 +6,6 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] int _hp;
 
-
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +19,6 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("Mario has Died");
         }
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -43,5 +39,4 @@ public class PlayerHealth : MonoBehaviour
     {
         return _hp;
     }
-
 }
