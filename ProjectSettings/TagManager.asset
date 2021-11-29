@@ -12,6 +12,8 @@ TagManager:
   - waypoint
   - MushroomBlock
   - MafiaBlock
+  - Mafia
+  - Mushroom
   layers:
   - Default
   - TransparentFX

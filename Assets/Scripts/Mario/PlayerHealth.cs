@@ -19,7 +19,6 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("Mario has Died");
         }
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -40,5 +39,4 @@ public class PlayerHealth : MonoBehaviour
     {
         return _hp;
     }
-
 }

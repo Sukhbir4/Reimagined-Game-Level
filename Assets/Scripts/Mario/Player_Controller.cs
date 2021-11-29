@@ -6,14 +6,19 @@ public class Player_Controller : MonoBehaviour
 {
     Transform trans;
     Rigidbody2D body;
+
     [SerializeField] float runSpeed;
     [SerializeField] float defaultSpeed; 
     [SerializeField] float jumpForce;
-    [SerializeField] ParticleSystem runSmoke;
-    [SerializeField] int enemieBounceBack;
     [SerializeField] float dashForce;
 
     [SerializeField] bool hasStarPower;
+
+    [SerializeField] int enemyBounceBack;
+
+    [SerializeField] ParticleSystem runSmoke;
+
+    Vector2 temp;
 
     Stompy stomp;
 
@@ -44,6 +49,7 @@ public class Player_Controller : MonoBehaviour
         {
             jumpInput = true;
         }
+
         if (Input.GetKeyUp(KeyCode.W))
         {
             jumpInput = false;
@@ -53,6 +59,7 @@ public class Player_Controller : MonoBehaviour
         {
             dashInput = true;
         }
+
         if (Input.GetKeyUp(KeyCode.Space))
         {
             dashInput = false;
@@ -68,11 +75,11 @@ public class Player_Controller : MonoBehaviour
         { 
             jump();
         }
+
         if(dashInput == true && canDash)
         {
             dash();
         }
-
     }
 
     void Movement()
@@ -92,6 +99,7 @@ public class Player_Controller : MonoBehaviour
             trans.rotation = Quaternion.Euler(0, 0, 0);
             isWalking = true;
         }
+
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) && isGrounded) 
         {
             speed = runSpeed; 
@@ -112,6 +120,7 @@ public class Player_Controller : MonoBehaviour
         {
             isWalking = false;
         }
+
         if (!Input.GetKey(KeyCode.LeftShift))
         {
             isRunning = false;
@@ -124,7 +133,6 @@ public class Player_Controller : MonoBehaviour
         body.AddForce(transform.right * dashForce, ForceMode2D.Impulse);
         canDash = false;
         //speed = dashForce;
-        
     }
 
     void jump()
@@ -138,7 +146,7 @@ public class Player_Controller : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.gameObject.tag == "Ground")
+        if(collision.collider.gameObject.tag == "Ground" || collision.collider.gameObject.tag == "MushroomBlock" || collision.collider.gameObject.tag == "MafiaBlock")
         {
             for(int i = 0; i < collision.contacts.Length; i++) 
             {
@@ -165,6 +173,22 @@ public class Player_Controller : MonoBehaviour
         if (collision.gameObject.tag == "MushroomBlock" || collision.gameObject.tag == "MafiaBlock")
         {
             collision.gameObject.GetComponent<QuestionBlock>().QuestionBlockBounce();
+        }
+
+        //Scale up Mario with Mushroom powerup
+        if (collision.gameObject.tag == "Mushroom")
+        {
+            temp = transform.localScale;
+
+            temp.x += 0.2f;
+            temp.y += 0.75f;
+
+            transform.localScale = temp;
+        }
+
+        if (collision.gameObject.tag == "Mafia")
+        {
+            Debug.Log("Mafia");
         }
     }
 
@@ -195,11 +219,5 @@ public class Player_Controller : MonoBehaviour
     public bool GetIsGrounded()
     {
         return isGrounded;
-
-
     }
-
-
-
-
 }
