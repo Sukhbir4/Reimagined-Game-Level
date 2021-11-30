@@ -10,10 +10,9 @@ public class FlyingKoopa : MonoBehaviour
     [SerializeField] GameObject RegularKoopa;
     [SerializeField] Transform koopaPosition;
     
-
-
     bool turn;
     bool hitFace;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +25,9 @@ public class FlyingKoopa : MonoBehaviour
     {
         transform.Translate(Vector2.right * Time.deltaTime * speed);
     }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
-
         if (collision.collider.tag == "DeathFloor")
         {
             Die();
@@ -59,11 +58,8 @@ public class FlyingKoopa : MonoBehaviour
             {
                 gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
-
         }
     }
-
-
 
     void Die()
     {
@@ -72,7 +68,6 @@ public class FlyingKoopa : MonoBehaviour
 
     void spawnKoopa()
     {
-
 
 
 

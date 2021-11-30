@@ -8,7 +8,6 @@ public class AnimControll : MonoBehaviour
     Player_Controller playerMovement;
     PlayerHealth health;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +36,7 @@ public class AnimControll : MonoBehaviour
         {
             anim.SetBool("Running", false);
         }
+
         if (playerMovement.GetIsGrounded())
         {
             anim.SetBool("InAir", false);
@@ -51,6 +51,5 @@ public class AnimControll : MonoBehaviour
             anim.SetBool("died", true);
 
         }
-
     }
 }

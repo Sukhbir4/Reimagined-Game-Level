@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class Stompy : MonoBehaviour
 {
-
-
     [SerializeField] int bounce;
     [SerializeField] ParticleSystem blood;
+    
     Animator anim;
     BoxCollider2D enemy;
     Rigidbody2D enBody;
-
 
     // Start is called before the first frame update
     void Start()
@@ -21,12 +19,7 @@ public class Stompy : MonoBehaviour
         enBody = transform.parent.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
@@ -38,9 +31,6 @@ public class Stompy : MonoBehaviour
             blood.gameObject.SetActive(true);
             enemy.enabled = false;
             enBody.gravityScale = 1;
-            
-
-
         }
     }      
 }

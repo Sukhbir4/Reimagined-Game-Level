@@ -14,6 +14,7 @@ TagManager:
   - MafiaBlock
   - Mafia
   - Mushroom
+  - Player Bullet
   layers:
   - Default
   - TransparentFX
@@ -23,8 +24,8 @@ TagManager:
   - UI
   - Invisible cam wall
   - Enemy
-  - 
-  - 
+  - Bullet
+  - Player
   - 
   - 
   - 

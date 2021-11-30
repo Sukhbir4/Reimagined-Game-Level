@@ -9,12 +9,6 @@ public class Timer : MonoBehaviour
     [SerializeField] Text TextVar;
     [SerializeField] int startTime;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {

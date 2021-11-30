@@ -7,12 +7,6 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] int _hp;
     [SerializeField] GameObject deathScreen;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -48,6 +42,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void SetHp(int added)
     {
+        Debug.Log("Helath increase");
         _hp += added;
     }
 }

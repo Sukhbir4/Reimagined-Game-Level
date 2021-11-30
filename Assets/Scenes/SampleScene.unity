@@ -1803,9 +1803,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 390406555}
     m_Modifications:
+    - target: {fileID: 1868246511, guid: 0380c68aa7d35cc4c96921f13ac4879e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5525698877113637874, guid: 0380c68aa7d35cc4c96921f13ac4879e, type: 3}
       propertyPath: m_Name
       value: Goomba
+      objectReference: {fileID: 0}
+    - target: {fileID: 6825299280154741133, guid: 0380c68aa7d35cc4c96921f13ac4879e, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 2078330360}
+    - target: {fileID: 6825299280154741133, guid: 0380c68aa7d35cc4c96921f13ac4879e, type: 3}
+      propertyPath: bounce
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 9093136610370486706, guid: 0380c68aa7d35cc4c96921f13ac4879e, type: 3}
       propertyPath: m_RootOrder
@@ -4154,6 +4166,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1168451783}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &911918557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911918558}
+  m_Layer: 0
+  m_Name: Bullet Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &911918558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911918557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.291, y: -0.163, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1815672931}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &937718572
 GameObject:
@@ -11930,6 +11972,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!198 &1656282425 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1360622688, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
+  m_PrefabInstance: {fileID: 645020407843376944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1663023109
 GameObject:
   m_ObjectHideFlags: 0
@@ -12605,7 +12652,7 @@ GameObject:
   - component: {fileID: 1815672933}
   - component: {fileID: 1815672934}
   - component: {fileID: 1815672929}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mario
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -12631,6 +12678,13 @@ MonoBehaviour:
   hasStarPower: 0
   enemyBounceBack: 0
   runSmoke: {fileID: 1437133388}
+  mario: {fileID: 1428657670321064428, guid: 99baada1c74e0164aa4f4b435dbd8bfd, type: 3}
+  mushroom: {fileID: -377172398528279806, guid: 99baada1c74e0164aa4f4b435dbd8bfd, type: 3}
+  mafia: {fileID: 8087837177064728638, guid: 91179362d2491204eb7314d13cb35272, type: 3}
+  bulletPrefab: {fileID: 7758372308581456335, guid: 4888f76c60f4fdf4a81b8ce721c95fd7, type: 3}
+  bulletSpawn: {fileID: 911918558}
+  bulletSpeed: 20
+  shootDelay: 0.75
 --- !u!50 &1815672928
 Rigidbody2D:
   serializedVersion: 4
@@ -12731,6 +12785,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1437133390}
+  - {fileID: 911918558}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12954,6 +13009,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &2078330360 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 290869235, guid: 0380c68aa7d35cc4c96921f13ac4879e, type: 3}
+  m_PrefabInstance: {fileID: 445162315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2086446156
 GameObject:
   m_ObjectHideFlags: 0
@@ -13258,6 +13318,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 390406555}
     m_Modifications:
+    - target: {fileID: 1358020986, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1358020987, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.747475
@@ -13278,13 +13342,33 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 645020408470899445, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
+      propertyPath: blood
+      value: 
+      objectReference: {fileID: 1656282425}
+    - target: {fileID: 645020408470899445, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
+      propertyPath: bounce
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 645020408470899446, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
       propertyPath: m_Size.y
       value: 1.1202002
       objectReference: {fileID: 0}
     - target: {fileID: 645020408470899446, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 645020408470899446, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
       propertyPath: m_Offset.y
       value: -0.014899969
+      objectReference: {fileID: 0}
+    - target: {fileID: 645020408470899446, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732044193658802462, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4063363488069922783, guid: 9d012241e56deed49965ee661b0f13af, type: 3}
       propertyPath: m_Name

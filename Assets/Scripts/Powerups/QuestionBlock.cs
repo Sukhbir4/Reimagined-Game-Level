@@ -22,13 +22,7 @@ public class QuestionBlock : MonoBehaviour
     void Start()
     {
         originalPos = transform.position;
-
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     public void QuestionBlockBounce()
@@ -76,8 +70,10 @@ public class QuestionBlock : MonoBehaviour
                 {
                     var mafia = Instantiate(mafiaPrefab, powerupSpawn.position, Quaternion.Euler(new Vector3(0, 0, 0)));
                 }
+
                 break;
             }
+
             yield return null;
         }
     }

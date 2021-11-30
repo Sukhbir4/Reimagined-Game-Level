@@ -4942,6 +4942,7 @@ GameObject:
   - component: {fileID: 645020408470899447}
   - component: {fileID: 645020408470899446}
   - component: {fileID: 645020408470899445}
+  - component: {fileID: 2732044193658802462}
   m_Layer: 7
   m_Name: Koopa
   m_TagString: Enemy
@@ -5095,3 +5096,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  bounce: 0
+  blood: {fileID: 0}
+--- !u!61 &2732044193658802462
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4063363488069922783}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.016845703, y: 0.66120386}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 1.15}
+    newSize: {x: 0.8, y: 1.15}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.60022736, y: 0.08852577}
+  m_EdgeRadius: 0

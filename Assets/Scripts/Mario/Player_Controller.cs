@@ -18,8 +18,22 @@ public class Player_Controller : MonoBehaviour
 
     [SerializeField] ParticleSystem runSmoke;
 
+    //Powerup Variables
+    SpriteRenderer rend;
+    [SerializeField] Sprite mario, mushroom, mafia;
+
+    bool mafiaPowerup = false;
+
+    //Bullet Variables
+    [SerializeField] GameObject bulletPrefab;
+    [SerializeField] Transform bulletSpawn;
+    [SerializeField] float bulletSpeed;
+    [SerializeField] float shootDelay;
+    float timeToNextShot = 0;
+
     Vector2 temp;
     PlayerHealth hp;
+
     Stompy stomp;
 
     float speed;
@@ -35,12 +49,17 @@ public class Player_Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        canMove = true;
         speed = defaultSpeed;
+
         trans = GetComponent<Transform>();
         body = GetComponent<Rigidbody2D>();
+
         stomp = GetComponent<Stompy>();
-        canMove = true;
+
         hp = GetComponent<PlayerHealth>();
+
+        rend = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -48,8 +67,6 @@ public class Player_Controller : MonoBehaviour
     {
         if (canMove)
         {
-
-
             Movement();
 
             if (Input.GetKeyDown(KeyCode.W))
@@ -73,13 +90,16 @@ public class Player_Controller : MonoBehaviour
             }
         }
 
+        if (Input.GetKey(KeyCode.E) && CanShoot())
+        {
+            ShootBullet();
+        }
+
         if (hp.GetHp() <= 0 )
         {
             canMove = false;
         }
-        Debug.Log(canDash);
     }
-    
 
     void FixedUpdate()
     {
@@ -149,10 +169,38 @@ public class Player_Controller : MonoBehaviour
 
     void jump()
     {
-
         body.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         isGrounded = false;
         runSmoke.gameObject.SetActive(false);
+    }
+
+    void ShootBullet()
+    {
+        var bullet = Instantiate(bulletPrefab, bulletSpawn.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+
+        bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
+
+        Destroy(bullet, 5);
+    }
+
+    bool CanShoot()
+    {
+        if (mafiaPowerup)
+        {
+            if (timeToNextShot < Time.realtimeSinceStartup)
+            {
+                timeToNextShot = Time.realtimeSinceStartup + shootDelay;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return false;
+        }
     }
   
 
@@ -190,17 +238,26 @@ public class Player_Controller : MonoBehaviour
         //Scale up Mario with Mushroom powerup
         if (collision.gameObject.tag == "Mushroom")
         {
-            temp = transform.localScale;
+            Destroy(collision.gameObject);
+
+            gameObject.GetComponent<PlayerHealth>().SetHp(1);
+
+            /*temp = transform.localScale;
 
             temp.x += 0.2f;
             temp.y += 0.75f;
 
-            transform.localScale = temp;
+            transform.localScale = temp;*/
+
+            Debug.Log("Get big");
+            rend.sprite = mushroom;
         }
 
         if (collision.gameObject.tag == "Mafia")
         {
             Debug.Log("Mafia");
+            mafiaPowerup = true;
+            gameObject.GetComponent<PlayerHealth>().SetHp(1);
         }
     }
 
