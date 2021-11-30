@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] int _hp;
+    [SerializeField] GameObject deathScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,11 @@ public class PlayerHealth : MonoBehaviour
         if (_hp <= 0)
         {
             Debug.Log("Mario has Died");
+            deathScreen.SetActive(true);
+        }
+        else
+        {
+            deathScreen.SetActive(false);
         }
     }
 
@@ -38,5 +44,10 @@ public class PlayerHealth : MonoBehaviour
     public int GetHp()
     {
         return _hp;
+    }
+
+    public void SetHp(int added)
+    {
+        _hp += added;
     }
 }

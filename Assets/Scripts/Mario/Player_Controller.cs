@@ -19,7 +19,7 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] ParticleSystem runSmoke;
 
     Vector2 temp;
-
+    PlayerHealth hp;
     Stompy stomp;
 
     float speed;
@@ -30,6 +30,7 @@ public class Player_Controller : MonoBehaviour
     bool isWalking;
     bool canDash;
     bool dashInput;
+    bool canMove;
 
     // Start is called before the first frame update
     void Start()
@@ -38,33 +39,44 @@ public class Player_Controller : MonoBehaviour
         trans = GetComponent<Transform>();
         body = GetComponent<Rigidbody2D>();
         stomp = GetComponent<Stompy>();
+        canMove = true;
+        hp = GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Movement();
-
-        if (Input.GetKeyDown(KeyCode.W))
+        if (canMove)
         {
-            jumpInput = true;
+
+
+            Movement();
+
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                jumpInput = true;
+            }
+
+            if (Input.GetKeyUp(KeyCode.W))
+            {
+                jumpInput = false;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                dashInput = true;
+            }
+
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                dashInput = false;
+            }
         }
 
-        if (Input.GetKeyUp(KeyCode.W))
+        if (hp.GetHp() <= 0 )
         {
-            jumpInput = false;
+            canMove = false;
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            dashInput = true;
-        }
-
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            dashInput = false;
-        }
-
         Debug.Log(canDash);
     }
     
