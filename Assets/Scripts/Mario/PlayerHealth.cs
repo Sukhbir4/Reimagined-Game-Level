@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] int _hp;
+    public [SerializeField] int _hp;
     [SerializeField] GameObject deathScreen;
 
     // Update is called once per frame
@@ -50,4 +51,6 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("Helath increase");
         _hp += added;
     }
+
+    if()
 }
