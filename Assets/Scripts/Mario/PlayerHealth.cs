@@ -2,14 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] int _hp;
+    public [SerializeField] int _hp;
     [SerializeField] GameObject deathScreen;
 
     // Update is called once per frame
     void Update()
     {
+        if (_hp >= 2)
+        {
+            _hp = 2;
+        }
+
         if (_hp <= 0)
         {
             Debug.Log("Mario has Died");
@@ -45,4 +51,6 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("Helath increase");
         _hp += added;
     }
+
+    if()
 }

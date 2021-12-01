@@ -2761,7 +2761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextVar: {fileID: 2089632305}
-  startTime: 300
+  startTime: 180
 --- !u!4 &634699692
 Transform:
   m_ObjectHideFlags: 0
@@ -12530,7 +12530,6 @@ MonoBehaviour:
   enemyBounceBack: 0
   runSmoke: {fileID: 1437133388}
   mario: {fileID: 1428657670321064428, guid: 99baada1c74e0164aa4f4b435dbd8bfd, type: 3}
-  mushroom: {fileID: -377172398528279806, guid: 99baada1c74e0164aa4f4b435dbd8bfd, type: 3}
   mafia: {fileID: 8087837177064728638, guid: 91179362d2491204eb7314d13cb35272, type: 3}
   bulletPrefab: {fileID: 7758372308581456335, guid: 4888f76c60f4fdf4a81b8ce721c95fd7, type: 3}
   bulletSpawn: {fileID: 911918558}
