@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
 
     [SerializeField] Text TextVar;
     [SerializeField] int TimeRemaining;
+    [SerializeField] GameObject mario;
 
     // Update is called once per frame
     void Update()

@@ -294,4 +294,8 @@ public class Player_Controller : MonoBehaviour
     {
         return mafiaPowerup;
     }
+    public void SetCanMove(bool boolIn)
+    {
+        canMove = boolIn;
+    }
 }
