@@ -10,6 +10,7 @@ public class FlyingKoopa : MonoBehaviour
     [SerializeField] GameObject RegularKoopa;
     [SerializeField] Transform koopaPosition;
     
+    
     bool turn;
     bool hitFace;
 
@@ -38,6 +39,8 @@ public class FlyingKoopa : MonoBehaviour
             var Koopa = Instantiate(RegularKoopa, koopaPosition.position, Quaternion.Euler(new Vector3(0,0,0)));
             Destroy(gameObject);
         }
+
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -57,6 +60,14 @@ public class FlyingKoopa : MonoBehaviour
             else
             {
                 gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+
+            if (collision.tag == "Player Bullet")
+            {
+                Rigidbody2D player = collision.GetComponent<Rigidbody2D>();
+                body.gravityScale = 2;
+                Debug.Log("grav scale " + body.gravityScale);
+                body.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
             }
         }
     }

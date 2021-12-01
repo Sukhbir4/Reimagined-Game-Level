@@ -51,5 +51,10 @@ public class AnimControll : MonoBehaviour
             anim.SetBool("died", true);
 
         }
+
+        if (health.GetHp() == 1)
+        {
+           
+        }
     }
 }
