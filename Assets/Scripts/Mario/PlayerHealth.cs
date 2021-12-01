@@ -10,6 +10,11 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_hp >= 2)
+        {
+            _hp = 2;
+        }
+
         if (_hp <= 0)
         {
             Debug.Log("Mario has Died");

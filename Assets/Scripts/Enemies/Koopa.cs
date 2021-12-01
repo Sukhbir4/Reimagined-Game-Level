@@ -11,7 +11,6 @@ public class Koopa : MonoBehaviour
     bool turn;
     bool hitFace;
 
-    //Test
     [SerializeField] int bounce;
     [SerializeField] ParticleSystem blood;
 
@@ -63,7 +62,6 @@ public class Koopa : MonoBehaviour
             }
         }
 
-        //Test
         if (collision.tag == "Player")
         {
             anim.SetBool("die", true);
@@ -76,6 +74,7 @@ public class Koopa : MonoBehaviour
             enBody.gravityScale = 1;
         }
 
+        //Check bullet collision
         if (collision.tag == "Player Bullet")
         {
             anim.SetBool("die", true);

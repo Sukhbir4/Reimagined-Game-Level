@@ -39,8 +39,6 @@ public class FlyingKoopa : MonoBehaviour
             var Koopa = Instantiate(RegularKoopa, koopaPosition.position, Quaternion.Euler(new Vector3(0,0,0)));
             Destroy(gameObject);
         }
-
-       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -62,6 +60,7 @@ public class FlyingKoopa : MonoBehaviour
                 gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
 
+            //Check bullet collision
             if (collision.tag == "Player Bullet")
             {
                 Rigidbody2D player = collision.GetComponent<Rigidbody2D>();

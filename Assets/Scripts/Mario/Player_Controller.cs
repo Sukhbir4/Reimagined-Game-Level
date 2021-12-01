@@ -20,7 +20,7 @@ public class Player_Controller : MonoBehaviour
 
     //Powerup Variables
     SpriteRenderer rend;
-    [SerializeField] Sprite mario, mushroom, mafia;
+    [SerializeField] Sprite mario, mafia;
 
     bool mafiaPowerup = false;
 
@@ -250,11 +250,11 @@ public class Player_Controller : MonoBehaviour
             transform.localScale = temp;*/
 
             Debug.Log("Get big");
-            rend.sprite = mushroom;
         }
 
         if (collision.gameObject.tag == "Mafia")
         {
+            Destroy(collision.gameObject);
             Debug.Log("Mafia");
             mafiaPowerup = true;
             gameObject.GetComponent<PlayerHealth>().SetHp(1);

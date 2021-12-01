@@ -11,7 +11,6 @@ public class Goomba : MonoBehaviour
     bool turn;
     bool hitFace;
 
-    //Test
     [SerializeField] int bounce;
     [SerializeField] ParticleSystem blood;
 
@@ -25,7 +24,6 @@ public class Goomba : MonoBehaviour
         trans = GetComponent<Transform>();
         body = GetComponent<Rigidbody2D>();
 
-        //Test
         anim = GetComponent<Animator>();
         enemy = transform.GetComponent<BoxCollider2D>();
         enBody = transform.GetComponent<Rigidbody2D>();
@@ -63,7 +61,6 @@ public class Goomba : MonoBehaviour
         //Check bullet collision
         if (collision.tag == "Player Bullet")
         {
-            Debug.Log("Hit");
             anim.SetBool("die", true);
 
             blood.gameObject.SetActive(true);
