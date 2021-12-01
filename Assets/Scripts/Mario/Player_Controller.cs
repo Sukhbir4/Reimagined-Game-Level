@@ -289,4 +289,9 @@ public class Player_Controller : MonoBehaviour
     {
         return isGrounded;
     }
+
+    public bool GetMafia()
+    {
+        return mafiaPowerup;
+    }
 }
