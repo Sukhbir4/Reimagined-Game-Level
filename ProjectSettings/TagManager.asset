@@ -15,6 +15,7 @@ TagManager:
   - Mafia
   - Mushroom
   - Player Bullet
+  - coin
   layers:
   - Default
   - TransparentFX
