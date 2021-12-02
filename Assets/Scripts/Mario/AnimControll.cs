@@ -54,10 +54,10 @@ public class AnimControll : MonoBehaviour
 
         if (health.GetHp() < 2)
         {
-            Debug.Log("help me");
+           // Debug.Log("help me");
             anim.SetBool("IsMafia", false);
             
-            Debug.Log("mafia" + anim.GetBool("IsMafia"));  
+           // Debug.Log("mafia" + anim.GetBool("IsMafia"));  
             
         }
         if (playerMovement.GetMafia())

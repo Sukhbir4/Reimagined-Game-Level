@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] int _hp;
-    [SerializeField] GameObject deathScreen;
+    [SerializeField] public int _hp;
+    [SerializeField] public GameObject deathScreen;
 
     // Update is called once per frame
     void Update()
