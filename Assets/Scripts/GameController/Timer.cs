@@ -10,7 +10,8 @@ public class Timer : MonoBehaviour
     [SerializeField] Text TextVar;
     [SerializeField] int TimeRemaining;
     [SerializeField] GameObject mario;
-
+    [SerializeField] GameObject deathscreen;
+    
     // Update is called once per frame
     void Update()
     {
@@ -18,7 +19,9 @@ public class Timer : MonoBehaviour
 
         if(TimeRemaining < 0.1)
         {
-            
+            //Debug.Log("You've run out of time");
+            ////mario = gameObject.GetComponent<mario>();
+            ////deathScreen.SetActive(true);
         }
 
 
