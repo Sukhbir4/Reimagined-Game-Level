@@ -17,6 +17,7 @@ public class Goomba : MonoBehaviour
     Animator anim;
     BoxCollider2D enemy;
     Rigidbody2D enBody;
+    Renderer render;
 
     // Start is called before the first frame update
     void Start()
@@ -27,12 +28,16 @@ public class Goomba : MonoBehaviour
         anim = GetComponent<Animator>();
         enemy = transform.GetComponent<BoxCollider2D>();
         enBody = transform.GetComponent<Rigidbody2D>();
+        render = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.left * Time.deltaTime * speed);
+        if (render.isVisible)
+        {
+            transform.Translate(Vector2.left * Time.deltaTime * speed);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
