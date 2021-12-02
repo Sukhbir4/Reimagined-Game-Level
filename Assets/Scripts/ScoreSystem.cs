@@ -16,44 +16,39 @@ public class ScoreSystem : MonoBehaviour
 
     void Update()
     {
-        TextVar.text = $"Time: {TimeRemaining - Time.realtimeSinceStartup:0}";
+        //TextVar.text = $"Time: {TimeRemaining - Time.realtimeSinceStartup:0}";
 
-        if (TimeRemaining < 0.1)
-        {
-            //Debug.Log("You've run out of time");
-            ////mario = gameObject.GetComponent<mario>();
-            ////deathScreen.SetActive(true);
-        }
+        //if (TimeRemaining < 0.1)
+        //{
+        //    //Debug.Log("You've run out of time");
+        //    ////mario = gameObject.GetComponent<mario>();
+        //    ////deathScreen.SetActive(true);
+        //}
    
-        TimeRemainingUI.gameObject.GetComponent<Text>().text = ("Time Left:" + TimeRemaining);
-        TimeRemainingUI.gameObject.GetComponent<Text>().text = ("Score:" + playerScore);
+        //TimeRemainingUI.gameObject.GetComponent<Text>().text = ("Time Left:" + TimeRemaining);
+        playerScoreUI.gameObject.GetComponent<Text>().text = ("Score:" + playerScore);
     }
 
     // score given once a koopa is killed
-    void OnTriggerEnter2D(Collider2D Score)
+    void OnTriggerEnter2D(Collider2D score)
     {
-        if(Score.gameObject.name == "Koopa")
+        if(score.gameObject.name == "Koopa")
         {
             playerScore += 10;
             CountScore();
         }
 
-        if(Score.gameObject.name == "coin")
+        if(score.gameObject.tag == "coin")
         {
             playerScore += 10;
-            Destroy(Score.gameObject);
+            Destroy(score.gameObject);
         }
     }
 
     // points given based on how much time is left upon completion
     void CountScore()
     {
-        playerScore = playerScore + (TimeRemaining * 10);
+        playerScore += (TimeRemaining * 10);
         Debug.Log(playerScore);
-    }
-
-    void PlayerRaycast()
-    {
-
     }
 }
