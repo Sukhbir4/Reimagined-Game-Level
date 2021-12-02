@@ -52,17 +52,13 @@ public class AnimControll : MonoBehaviour
 
         }
 
-        if (health.GetHp() < 2)
-        {
-           // Debug.Log("help me");
-            anim.SetBool("IsMafia", false);
-            
-           // Debug.Log("mafia" + anim.GetBool("IsMafia"));  
-            
-        }
         if (playerMovement.GetMafia())
         {
             anim.SetBool("IsMafia", true);
+        }
+        else
+        {
+            anim.SetBool("IsMafia", false);
         }
     }
 }
