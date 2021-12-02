@@ -48,7 +48,7 @@ public class FlyingKoopa : MonoBehaviour
             if (collision.tag == "waypoint" || collision.tag == "Player")
             {
                 hitFace = !hitFace;
-                Debug.Log("pine");
+                //Debug.Log("pine");
             }
 
             if (hitFace)

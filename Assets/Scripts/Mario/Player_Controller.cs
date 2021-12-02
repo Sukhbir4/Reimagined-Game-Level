@@ -21,6 +21,8 @@ public class Player_Controller : MonoBehaviour
     //Powerup Variables
     SpriteRenderer rend;
     [SerializeField] Sprite mario, mafia;
+    CapsuleCollider2D collider;
+
 
     bool mafiaPowerup = false;
 
@@ -60,6 +62,8 @@ public class Player_Controller : MonoBehaviour
         hp = GetComponent<PlayerHealth>();
 
         rend = GetComponent<SpriteRenderer>();
+
+        collider = GetComponent<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
@@ -98,6 +102,12 @@ public class Player_Controller : MonoBehaviour
         if (hp.GetHp() <= 0 )
         {
             canMove = false;
+        }
+
+        if (hp.GetHp() == 1)
+        {
+            mafiaPowerup = false;
+            collider.size = new Vector3(0.6f, 0.8f, 1f);
         }
     }
 
@@ -164,7 +174,6 @@ public class Player_Controller : MonoBehaviour
     {
         body.AddForce(transform.right * dashForce, ForceMode2D.Impulse);
         canDash = false;
-        //speed = dashForce;
     }
 
     void jump()
@@ -202,30 +211,20 @@ public class Player_Controller : MonoBehaviour
             return false;
         }
     }
-  
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.gameObject.tag == "Ground" || collision.collider.gameObject.tag == "MushroomBlock" || collision.collider.gameObject.tag == "MafiaBlock")
+        if (collision.collider.gameObject.tag == "Ground" || collision.collider.gameObject.tag == "MushroomBlock" || collision.collider.gameObject.tag == "MafiaBlock")
         {
-            for(int i = 0; i < collision.contacts.Length; i++) 
+            for (int i = 0; i < collision.contacts.Length; i++)
             {
-                if (collision.contacts[i].normal.y > 0.5) 
+                if (collision.contacts[i].normal.y > 0.5)
                 {
                     isGrounded = true;
                     canDash = true;
                 }
             }
         }
-
-
-        //if (collision.gameObject.tag == "Stompy")
-        //{
-        //    Debug.Log("stompy");
-        //    body.AddForce(transform.up * enemieBounceBack, ForceMode2D.Impulse);
-            
-        //}
-
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -236,39 +235,36 @@ public class Player_Controller : MonoBehaviour
         }
 
         //Scale up Mario with Mushroom powerup
-        if (collision.gameObject.tag == "Mushroom")
+        if (collision.gameObject.tag == "Mushroom" && !mafiaPowerup)
         {
             Destroy(collision.gameObject);
 
             gameObject.GetComponent<PlayerHealth>().SetHp(1);
 
-            /*temp = transform.localScale;
+            temp = transform.localScale;
 
             temp.x += 0.2f;
             temp.y += 0.75f;
 
-            transform.localScale = temp;*/
-
-            Debug.Log("Get big");
+            transform.localScale = temp;
         }
 
         if (collision.gameObject.tag == "Mafia")
         {
             Destroy(collision.gameObject);
-            Debug.Log("Mafia");
-            mafiaPowerup = true;
+
             gameObject.GetComponent<PlayerHealth>().SetHp(1);
+
+            temp.x = 1f;
+            temp.y = 1f;
+
+            transform.localScale = temp;
+
+            collider.size = new Vector3(0.8f, 1.6f, 1f);
+
+            mafiaPowerup = true;
         }
     }
-
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "Stompy")
-    //    {
-    //        Debug.Log("stompy");
-    //        body.AddForce(transform.up * enemieBounceBack, ForceMode2D.Impulse);
-    //    }
-    //}
 
     public float GetSpeed()
     {
