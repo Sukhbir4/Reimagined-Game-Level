@@ -13,7 +13,7 @@ public class ScoreSystem : MonoBehaviour
 
     [SerializeField] Text TextVar;
     [SerializeField] int TimeRemaining;
-    [SerializeField] public GameObject deathscreen;
+    [SerializeField] public GameObject NoTimeScreen;
 
     void Update()
     {
@@ -22,8 +22,11 @@ public class ScoreSystem : MonoBehaviour
         if (TimeRemaining < 0.1)
         {
             Debug.Log("You've run out of time");
-            deathscreen.gameObject.GetComponent<PlayerHealth>();
-            deathscreen.SetActive(true);
+            NoTimeScreen.SetActive(true);
+        }
+        else
+        {
+            NoTimeScreen.SetActive(false);
         }
 
         //TimeRemainingUI.gameObject.GetComponent<Text>().text = ("Time Left:" + TimeRemaining);
@@ -42,6 +45,16 @@ public class ScoreSystem : MonoBehaviour
         {
             playerScore += 10;
             Destroy(score.gameObject);
+        }
+        
+        if(score.gameObject.tag == "Mafia")
+        {
+            playerScore += 100;
+        }
+
+        if(score.gameObject.tag == "Mushroom")
+        {
+            playerScore += 50;
         }
     }
 
