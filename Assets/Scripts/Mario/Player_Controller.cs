@@ -32,7 +32,8 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] float bulletSpeed;
     [SerializeField] float shootDelay;
     float timeToNextShot = 0;
-
+    
+    [SerializeField] GameObject winScreen;
     Vector2 temp;
     PlayerHealth hp;
 
@@ -47,6 +48,7 @@ public class Player_Controller : MonoBehaviour
     bool canDash;
     bool dashInput;
     bool canMove;
+    bool win;
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +66,8 @@ public class Player_Controller : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
 
         collider = GetComponent<CapsuleCollider2D>();
+
+        winScreen.SetActive(false);
     }
 
     // Update is called once per frame
@@ -108,6 +112,12 @@ public class Player_Controller : MonoBehaviour
         {
             mafiaPowerup = false;
             collider.size = new Vector3(0.6f, 0.8f, 1f);
+        }
+
+
+        if (win == true && body.transform.position.y <= -3.6)
+        {
+            winScreen.SetActive(true);
         }
     }
 
@@ -271,10 +281,10 @@ public class Player_Controller : MonoBehaviour
             float timeHit = Time.realtimeSinceStartup;
             Debug.Log(timeHit);
             Debug.Log(Time.realtimeSinceStartup);
-            while (timeHit - Time.realtimeSinceStartup != -5)
-            {
-                Debug.Log("work pls");
-            }
+
+            body.constraints = RigidbodyConstraints2D.None;
+            win = true;
+            
         }
     }
 
