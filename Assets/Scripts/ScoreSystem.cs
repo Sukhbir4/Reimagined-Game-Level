@@ -24,10 +24,7 @@ public class ScoreSystem : MonoBehaviour
             Debug.Log("You've run out of time");
             NoTimeScreen.SetActive(true);
         }
-        else
-        {
-            NoTimeScreen.SetActive(false);
-        }
+      
 
         //TimeRemainingUI.gameObject.GetComponent<Text>().text = ("Time Left:" + TimeRemaining);
         playerScoreUI.gameObject.GetComponent<Text>().text = ("Score:" + playerScore);
