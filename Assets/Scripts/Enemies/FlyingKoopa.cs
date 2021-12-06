@@ -45,7 +45,7 @@ public class FlyingKoopa : MonoBehaviour
     {
         if (GetComponent<Renderer>())
         {
-            if (collision.tag == "waypoint" || collision.tag == "Player")
+            if (collision.tag == "waypoint")
             {
                 hitFace = !hitFace;
                 //Debug.Log("pine");
