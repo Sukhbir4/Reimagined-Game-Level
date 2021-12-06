@@ -229,13 +229,13 @@ public class Player_Controller : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "MushroomBlock" || collision.gameObject.tag == "MafiaBlock")
+        if (collision.tag == "MushroomBlock" || collision.gameObject.tag == "MafiaBlock")
         {
             collision.gameObject.GetComponent<QuestionBlock>().QuestionBlockBounce();
         }
 
         //Scale up Mario with Mushroom powerup
-        if (collision.gameObject.tag == "Mushroom" && !mafiaPowerup)
+        if (collision.tag == "Mushroom" && !mafiaPowerup)
         {
             Destroy(collision.gameObject);
 
@@ -249,7 +249,7 @@ public class Player_Controller : MonoBehaviour
             transform.localScale = temp;
         }
 
-        if (collision.gameObject.tag == "Mafia")
+        if (collision.tag == "Mafia")
         {
             Destroy(collision.gameObject);
 
@@ -263,6 +263,18 @@ public class Player_Controller : MonoBehaviour
             collider.size = new Vector3(0.8f, 1.6f, 1f);
 
             mafiaPowerup = true;
+        }
+        if (collision.tag == "flag")
+        {
+            body.constraints = RigidbodyConstraints2D.FreezePosition;
+            canMove = false;
+            float timeHit = Time.realtimeSinceStartup;
+            Debug.Log(timeHit);
+            Debug.Log(Time.realtimeSinceStartup);
+            while (timeHit - Time.realtimeSinceStartup != -5)
+            {
+                Debug.Log("work pls");
+            }
         }
     }
 

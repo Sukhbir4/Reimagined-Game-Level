@@ -6,24 +6,31 @@ using UnityEngine.UI;
 
 public class ScoreSystem : MonoBehaviour
 {
-    public static int playerScore = 0;
+    public static float playerScore = 0;
     public GameObject TimeRemainingUI;
     public GameObject playerScoreUI;
     
 
     [SerializeField] Text TextVar;
-    [SerializeField] int TimeRemaining;
+    [SerializeField] float TimeRemaining;
     [SerializeField] public GameObject NoTimeScreen;
+
+    private void Start()
+    {
+        NoTimeScreen.SetActive(false);
+    }
 
     void Update()
     {
-        TextVar.text = $"Time: {TimeRemaining - Time.realtimeSinceStartup:0}";
-         
+        TimeRemaining -= Time.deltaTime; 
+        TextVar.text = $"Time: {TimeRemaining:0}";
+       
 
-        if (TimeRemaining < 0.1)
+        if (TimeRemaining <= 0)
         {
             Debug.Log("You've run out of time");
             NoTimeScreen.SetActive(true);
+            
         }
       
 

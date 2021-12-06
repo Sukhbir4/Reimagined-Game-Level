@@ -16,7 +16,7 @@ TagManager:
   - Mushroom
   - Player Bullet
   - coin
-  - FlagPole
+  - flag
   layers:
   - Default
   - TransparentFX
