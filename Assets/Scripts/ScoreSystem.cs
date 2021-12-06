@@ -18,6 +18,7 @@ public class ScoreSystem : MonoBehaviour
     void Update()
     {
         TextVar.text = $"Time: {TimeRemaining - Time.realtimeSinceStartup:0}";
+         
 
         if (TimeRemaining < 0.1)
         {
